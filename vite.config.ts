@@ -16,4 +16,8 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
   },
+  define: {
+    // Fix for pako stream externalization warning
+    global: {},
+  },
 })
